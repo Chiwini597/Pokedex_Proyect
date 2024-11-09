@@ -1,0 +1,126 @@
+/* Estilo para el header */
+header {
+  background-color: #d4f3ed;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.title {
+  color: #113635;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px 0;
+  text-align: center;
+  width: 100%;
+}
+
+/* Estilo para la barra de navegación */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  flex: 1 1 auto;
+}
+
+/* Botones de tipo de Pokémon */
+.btn-header {
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Colores específicos para cada tipo de Pokémon */
+.normal { background-color: #edede6; }
+.fire { background-color: #EE8130; }
+.water { background-color: #6390F0; }
+.grass { background-color: #7AC74C; }
+.electric { background-color: #F7D02C; }
+.ice { background-color: #96D9D6; }
+.fighting { background-color: #C22E28; }
+.poison { background-color: #A33EA1; }
+.ground { background-color: #E2BF65; }
+.flying { background-color: #A98FF3; }
+.psychic { background-color: #F95587; }
+.bug { background-color: #A6B91A; }
+.rock { background-color: #B6A136; }
+.ghost { background-color: #735797; }
+.dragon { background-color: #6F35FC; }
+.steel { background-color: #B7B7CE; }
+.fairy { background-color: #D685AD; }
+
+/* Área de visualización de Pokémon */
+.pokemon-todos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Tarjeta individual de Pokémon */
+.pokemon {
+  background-color: #7ceeeb;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.2s;
+}
+
+.pokemon:hover {
+  transform: scale(1.05);
+}
+
+/* Estilos de los datos del Pokémon */
+.pokemon-id-back {
+  font-size: 1.5rem;
+  color: #03c0b3;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.pokemon-imagen img {
+  width: 80px;
+  height: 80px;
+}
+
+.pokemon-info {
+  margin-top: 10px;
+}
+
+.nombre-contenedor h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #275c4e;
+}
+
+.pokemon-tipos .tipo {
+  color: #7ce6e6;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+/* Estilos para las estadísticas */
+.pokemon-stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #001f6d;
+}
